@@ -14,7 +14,22 @@
 
 
 
+<script>
+function checkScreen() {
+  if (window.innerWidth < 1024) {
+    
+    while(window.innerWidth < 1024) {
+      alert("⚠️ هذا الموقع غير مدعوم إلا على أجهزة اللابتوب 💻");
+    }
+  }
+}
 
+
+checkScreen();
+
+
+window.addEventListener("resize", checkScreen);
+</script>
 
 
 
@@ -248,5 +263,6 @@
 </body>
 
 </html>
+
 
 
